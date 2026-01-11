@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learning Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Top Stats -->
+  <div class="stats">
+    <div class="card">Total Learners<br><b>22,500</b></div>
+    <div class="card male">Male<br><b>12,000</b></div>
+    <div class="card female">Female<br><b>10,000</b></div>
+    <div class="card other">Others<br><b>500</b></div>
+    <div class="card active">Active<br><b>9,312</b></div>
+    <div class="card engaged">Engaged<br><b>785</b></div>
+  </div>
+
+  <!-- Charts Row -->
+  <div class="grid-2">
+    <div class="chart-card">
+      <h3>Course Progress Rate</h3>
+      <canvas id="barChart"></canvas>
+    </div>
+
+    <div class="chart-card">
+      <h3>Overall Performance</h3>
+      <canvas id="horizontalChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Pie Charts -->
+  <div class="grid-2">
+    <div class="chart-card">
+      <h3>Assessment Completion</h3>
+      <canvas id="donutChart"></canvas>
+    </div>
+
+    <div class="chart-card">
+      <h3>Learners Grade</h3>
+      <canvas id="pieChart"></canvas>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
